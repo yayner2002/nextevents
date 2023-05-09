@@ -1,10 +1,11 @@
+import EventList from "imr/components/events/event-list";
+import { getAllEvents } from "../../dummy-data";
 import React from "react";
 
 const AllEventsPage = () => {
+  const allEvents = getAllEvents();
   return (
-    <div>
-      <h1>All Events Page</h1>
-    </div>
+   <EventList items={allEvents} />
   );
 };
 
